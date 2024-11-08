@@ -1,73 +1,89 @@
+:root {
+  --main-bg-color: rgb(0, 0, 0);
+  --content-bg-color: rgb(255, 255, 255);
+  --title-bg-color: rgb(255, 0, 149);
+  --color: rgb(0, 0, 0);
+}
+
 * {
-    box-sizing: border-box;
-    font-family: Verdana;
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    background-color: black;
-  }
-  section {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana;
+  background-color: var(--main-bg-color);
+}
+
+section {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.otterContainer {
+  background-color:var(--content-bg-color);
+  width: 450px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+}
+
+.titleContainer {
+  background-color: var(--title-bg-color);
+  border: 1px solid;
+  border-radius: 8px;
+  width: 90%;
+  padding: 15px;
+  text-align: center;
+  position: absolute;
+  top: -30px;
+}
+
+h1 {
+  font-size: 30px;
+  color: var(--color);
+}
+
+.paragraphContainer {
+  padding-block-start: 50px;
+}
+
+p {
+  font-size: 17px;
+  color: var(--color);
+  line-height: 28px;
+}
+
+@media (max-width: 768px) {
   .otterContainer {
-    background-color: white;
-    width: 450px;
-    border-radius: 10px;
-    position: relative;
-    display: flex;
-    padding: 20px;
-    flex-direction: column;
-    align-items: center;
-    text-align: start;
-  }
-  .topContainer {
-    background-color: rgb(255, 0, 149);
-    border: 1px solid;
-    border-radius: 8px;
-    width: 90%;
-    padding: 15px;
-    text-align: center;
-    position: absolute;
-    top: -30px;
+    width: 300px;
   }
   h1 {
-    font-size: 30px;
-    color: black;
-  }
-  .paragraphContainer {
-    padding-block-start: 50px;
+    font-size: 24px;
   }
   p {
-    font-size: 17px;
-    color: black;
-    line-height: 28px;
+    font-size: 16px;
   }
-  @media (max-width: 768px) {
-    .otterContainer {
-      width: 300px;
-    }
-    h1 {
-      font-size: 24px;
-    }
-    p {
-      font-size: 16px;
-    }
+}
+
+@media (max-width: 450px) {
+  .otterContainer {
+    width: 200px;
   }
-  @media (max-width: 450px) {
-    .otterContainer {
-      width: 200px;
-    }
-    h1 {
-      font-size: 20px;
-    }
-    p {
-      font-size: 14px;
-    }
+  h1 {
+    font-size: 20px;
   }
+  p {
+    font-size: 14px;
+  }
+}

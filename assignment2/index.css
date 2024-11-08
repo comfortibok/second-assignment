@@ -1,0 +1,137 @@
+:root {
+  --bg-color1: rgb(102, 102, 102);
+  --bg-color2: rgb(255, 255, 255);
+  --bg-color3: rgb(255, 191, 0);
+  --border-bg-color: rgb(204, 153, 0);
+  --color-hr: rgb(153, 153, 153);
+  --color-strong: rgb(0, 128, 41);
+  --font-weight: 400;
+  --font-weight-1: 500;
+  --font-weight-2: 700;
+  --font-weight-3: 800;
+}
+* {
+  box-sizing: border-box;
+  font-family: Lato;
+  margin: 0;
+  padding: 0;
+}
+header {
+  width: 100%;
+  padding: 4rem 0 2rem 0;
+}
+.firstContainer {
+  max-width: 808px;
+  margin: 0 auto;
+  padding: 20px;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: var(--font-weight-3);
+  margin-bottom: 1.5rem;
+}
+.first-content-paragraph1,
+.first-content-paragraph2 {
+  font-weight: var(--font-weight);
+  width: 415px;
+}
+strong {
+  color: var(--color-strong);
+  font-weight: var(--font-weight-3);
+}
+hr {
+  width: 100%;
+  border: 3px solid var(--color-hr);
+}
+.first-content-paragraph1,
+.first-content-paragraph2,
+.second-content-paragraph1,
+.second-content-paragraph2 {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+main {
+  background-color: var(--bg-color1);
+  padding-block: 3.5rem;
+}
+.secondContainer {
+  background-color: var(--bg-color2);
+  max-width: 808px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+.second-content-paragraph1,
+.second-content-paragraph2 {
+  max-width: 752px;
+  font-weight: var(--font-weight-1);
+}
+.second-content-paragraph1 {
+  margin-top: 60px;
+}
+main hr {
+  max-width: 808px;
+  margin: 0 auto;
+  border: 3px solid var(--color-hr);
+}
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  position: absolute;
+  top: 5px;
+  left: -8px;
+  max-width: 420px;
+}
+.titleContainer h2 {
+  background-color: var(--bg-color3);
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-2);
+  padding: 13px 20px;
+}
+.background {
+  background-color: var(--border-bg-color);
+  padding-top: 6px;
+}
+
+/* MEDIA QUERY FOR SCREENS 768PX AND BELOW */
+@media (max-width: 768px) {
+  .first-content-paragraph1,
+  .first-content-paragraph2 {
+    max-width: 420px;
+    width: 100%;
+  }
+
+  .titleContainer {
+    max-width: 450px;
+    width: 100%;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE SCREENS */
+@media (max-width: 400px) {
+  header {
+    width: 100%;
+  }
+
+  .first-content-paragraph1,
+  .first-content-paragraph2 {
+    max-width: 350px;
+    width: 100%;
+  }
+
+  .secondContainer {
+    padding: 40px 0 0 20px;
+  }
+
+  .second-content-paragraph1,
+  .second-content-paragraph2 {
+    max-width: 340px;
+    width: 100%;
+  }
+
+  .titleContainer {
+    max-width: 350px;
+    width: 100%;
+  }
+}
