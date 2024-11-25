@@ -147,21 +147,22 @@ h2 {
   display: flex;
   flex-direction: row;
   align-items: center;
- flex-wrap: nowrap;
- gap: 0;
-}
-#card-expiry, #credit-card-cvv, #credit-card{
-  margin: 0;
+  flex-wrap: nowrap;
+  gap: 0;
+  border-radius: 0;
 }
 #credit-card {
   width: 60%;
-  border-radius: 0;
 }
-#card-expiry, #credit-card-cvv {
+#credit-expiry,
+#credit-card-cvv {
   width: 20%;
-  border-radius: 0;
 }
- 
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+  border-radius: 5px;
+}
 input[type="text"],
 input[type="email"],
 input[type="number"],
@@ -174,7 +175,6 @@ input[type="datetime"] {
   color: rgb(100, 110, 122);
   background: rgb(237, 239, 242);
   border: none;
-  border-radius: 5px;
   outline: 0;
 }
 .support-Container {
@@ -425,15 +425,15 @@ footer span {
   .email {
     width: 100%;
   }
- #credit-card {
-  width: 50%;
-}
-#card-expiry {
-  width: 25%;
-}
-#credit-card-cvv {
-  width: 20%;
-}
+  #credit-card {
+    width: 50%;
+  }
+  #card-expiry {
+    width: 25%;
+  }
+  #credit-card-cvv {
+    width: 20%;
+  }
   .freelancer-p,
   .services,
   .comment {
@@ -488,7 +488,7 @@ footer span {
     gap: 10px;
   }
   #credit-card,
-  #card-expiry,
+  #credit-expiry,
   #credit-card-cvv {
     width: 100%;
   }
