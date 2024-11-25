@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WP Pusher</title>
+
+    <!-- Google font - Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font awesome icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="./assets/logo.png" alt="wp-pusher_logo" />
+        </div>
+        <ul class="nav-list">
+          <li class="menu-icon" onclick="toggleMenu()">
+            <span class="fa-solid fa-bars" aria-hidden="true"></span>
+          </li>
+          <li><a href="#">Download</a></li>
+          <li><a href="#">Learn more</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Help</a></li>
+          <li><button class="account">Account</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section>
+        <div class="form-container">
+          <div class="form-heading">
+            <h1>Checkout</h1>
+          </div>
+          <!-- Form section-->
+          <form action="/submit" method="post">
+            <div class="info-container">
+              <h2 class="info-heading">
+                <span class="number">1</span>
+                Your Basic Information
+              </h2>
+              <!--Basic Info section -->
+              <div class="inputContainer">
+                <div class="label-input-container">
+                  <label>First Name</label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="Jane"
+                    required
+                  />
+                </div>
+
+                <div class="label-input-container">
+                  <label>Last Name</label>
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    placeholder="Doe"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="email">
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="janedoe@example.com"
+                  required
+                />
+              </div>
+            </div>
+            <!-- Payment information section -->
+            <div class="payment-container">
+              <h2 class="info-heading">
+                <span class="number">2</span>
+                Your Payment Information
+              </h2>
+
+              <div class="credit-card-container">
+                <label>Credit Card</label>
+              </div>
+              <div class="card-details">
+                <input
+                  type="number"
+                  id="credit-card"
+                  name="credit-card"
+                  placeholder="Card Number"
+                />
+                <input
+                  type="datetime"
+                  id="credit-expiry"
+                  name="credit-expiry"
+                  placeholder="MM/YY"
+                />
+                <input
+                  type="number"
+                  id="credit-card-cvv"
+                  name="credit-card-cvv"
+                  placeholder="CVV"
+                />
+              </div>
+            </div>
+
+            <div class="support-Container">
+              <div class="support-container">
+                <button class="buy-btn">Buy WP Pusher</button>
+                <p class="support">
+                  <span>?</span> <strong>Need any help?</strong> Don't hesitate
+                  to contact support!
+                </p>
+              </div>
+
+              <p class="sponsor">Powered by <span>Stripe</span></p>
+            </div>
+          </form>
+        </div>
+
+        <!-- Freelancer Section -->
+        <div class="freelancerContainer">
+          <h2>Freelancer</h2>
+          <p class="freelancer-cost">
+            <span class="dollar">$</span>
+            <span class="cost-price">99<span class="year">/ year</span></span>
+          </p>
+          <p class="freelancer-p">Automatically renews after 1 year</p>
+
+          <div class="services">
+            <ul>
+              <li class="services-list">
+                <span class="fa-solid fa-check" aria-hidden="true"></span>Use on
+                <strong>5</strong> client sites
+              </li>
+              <li class="services-list">
+                <span class="fa-solid fa-check" aria-hidden="true"></span
+                >Private repositories
+              </li>
+              <li class="services-list">
+                <span class="fa-solid fa-check" aria-hidden="true"></span>Email
+                support
+              </li>
+            </ul>
+
+            <div class="client">
+              <p>Need <strong>20</strong> client sites?</p>
+              <h4>Switch to Agency Plan.</h4>
+            </div>
+          </div>
+
+          <div class="comment">
+            <p>
+              FTP is horrible to deal with. <strong>WP Pusher</strong> solves
+              that issue, and the customer support is awesome!
+            </p>
+            <div class="user">
+              <img src="./assets/img.jpg" alt="Kirk" />
+              <h5>Kirk Beard</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2018 WP Pusher IVS <span>· Terms of Service</span></p>
+    </footer>
+    <script>
+      function toggleMenu() {
+        const navList = document.querySelector('.nav-list');
+        navList.classList.toggle('active');
+      }
+    </script>
+  </body>
+</html>
