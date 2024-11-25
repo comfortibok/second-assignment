@@ -22,6 +22,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="index.css" />
   </head>
+
   <body>
     <!-- Header -->
     <header>
@@ -29,7 +30,10 @@
         <div class="header-logo">
           <img src="./assets/header-logo.png" alt="Scissor Logo" />
         </div>
-        <ul class="navContainerList">
+        <div class="menu-icon">
+          <span class="fa-solid fa-bars" aria-hidden="true"></span>
+        </div>
+        <ul class="nav-container-list">
           <li>
             <a href="#">My URLs</a>
           </li>
@@ -49,18 +53,17 @@
             <a href="#">FAQs</a>
           </li>
         </ul>
-        <div class="loginContainer">
+        <div class="login-container">
           <button class="login-btn">Log-in</button>
           <button class="trial-btn">Try for free</button>
-          <i class="fa-solid fa-bars menu-icon" aria-hidden="true"></i>
         </div>
       </nav>
     </header>
     <main>
       <!-- Main Content -->
-      <section class="mainContent">
+      <section class="main-content">
         <!-- Title -->
-        <section class="titleSection">
+        <section class="title-section">
           <div class="title">
             <h1>
               Optimize Your Online Experience with Our Advanced
@@ -80,6 +83,7 @@
             <button class="sign-btn">Sign up</button>
             <button class="learn-btn">Learn More</button>
           </div>
+
           <!-- Link -->
           <div class="linkContainer">
             <div class="link-container">
@@ -99,31 +103,34 @@
 
         <!-- Ellipse section -->
         <section class="ellipse-section">
-          <div class="ellipse-container">
-            <img src="./assets/Ellipse.png" alt="Ellipse" />
+          <div class="ellipseContainer">
+            <div class="ellipse-container"></div>
           </div>
         </section>
+
         <!-- Possibility Section -->
         <section class="possibility-section">
           <div class="possibility-title">
-            <h4>One Stop.</h4>
-            <h4>Four <span>Possibilities</span>.</h4>
+            <h4>
+              One Stop. <br />
+              Four <span>Possibilities</span>.
+            </h4>
           </div>
           <div class="possibility-numbers">
-            <div class="possibility-number-content">
-              <h4>3M</h4>
+            <div class="possibility-number1">
+              <p>3M</p>
               <span>Active users</span>
             </div>
-            <div class="possibility-number-content">
-              <h4>60M</h4>
+            <div class="possibility-number2">
+              <p>60M</p>
               <span>Links &amp; QR codes created</span>
             </div>
-            <div class="possibility-number-content">
-              <h4>1B</h4>
+            <div class="possibility-number3">
+              <p>1B</p>
               <span>Clicked &amp; Scanned connections</span>
             </div>
-            <div class="possibility-number-content">
-              <h4>300K</h4>
+            <div class="possibility-number4">
+              <p>300K</p>
               <span>App Integrations</span>
             </div>
           </div>
@@ -200,8 +207,159 @@
               you can be rest assured we have you in mind in our pricing.
             </p>
           </div>
-      
-        <!-- FAQ -->
+
+          <div class="price-content-container">
+            <div class="price-content-container-1">
+              <p>Basic</p>
+              <div class="price-content">
+                <div class="price-content-title">
+                  <h2>Free</h2>
+                  <p>Free plan for all users</p>
+                </div>
+                <div class="price-content-service">
+                  <span class="fa-regular fa-circle-check"></span>
+                  <p>Unlimited URL Shortening</p>
+                </div>
+                <div class="price-content-service">
+                  <span class="fa-regular fa-circle-check"></span>
+                  <p>Basic Link Analytics</p>
+                </div>
+                <div class="price-content-service">
+                  <span class="fa-regular fa-circle-check"></span>
+                  <p>Customizable Short Links</p>
+                </div>
+                <div class="price-content-service">
+                  <span class="fa-regular fa-circle-check"></span>
+                  <p>Standard Support</p>
+                </div>
+                <div class="price-content-service">
+                  <span class="fa-regular fa-circle-check"></span>
+                  <p>Ad-supported</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="price-content-container-2">
+              <p>Professional</p>
+              <div class="price-content">
+                <div class="price-content-title">
+                  <h2>$15/month</h2>
+                  <p>Ideal for business creators</p>
+                </div>
+                <div class="price-content-service">
+                  <span class="fa-regular fa-circle-check"></span>
+                  <p>Enhanced Link Analytics</p>
+                </div>
+                <div class="price-content-service">
+                  <span class="fa-regular fa-circle-check"></span>
+                  <p>Custom Branded Domains</p>
+                </div>
+                <div class="price-content-service">
+                  <span class="fa-regular fa-circle-check"></span>
+                  <p>Advanced Link Customization</p>
+                </div>
+                <div class="price-content-service">
+                  <span class="fa-regular fa-circle-check"></span>
+                  <p>Priority Support</p>
+                </div>
+                <div class="price-content-service">
+                  <span class="fa-regular fa-circle-check"></span>
+                  <p>Ad-free Experience</p>
+                </div>
+              </div>
+            </div>
+            <div class="price-content-container-3">
+              <p>Teams</p>
+              <div class="price-content">
+                <div class="price-content-title">
+                  <h2>$25/month</h2>
+                  <p>Share with up to 10 users</p>
+                </div>
+                <div class="price-content-service">
+                  <span class="fa-regular fa-circle-check"></span>
+                  <p>Team Collaboration</p>
+                </div>
+                <div class="price-content-service">
+                  <span class="fa-regular fa-circle-check"></span>
+                  <p>User Roles and Permissions</p>
+                </div>
+                <div class="price-content-service">
+                  <span class="fa-regular fa-circle-check"></span>
+                  <p>Enhanced Security</p>
+                </div>
+                <div class="price-content-service">
+                  <span class="fa-regular fa-circle-check"></span>
+                  <p>API Access</p>
+                </div>
+                <div class="price-content-service">
+                  <span class="fa-regular fa-circle-check"></span>
+                  <p>Dedicated Account Manager</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cost-button-container">
+            <button class="custom-btn">Get Custom Pricing</button>
+            <button class="price-btn">Select Pricing</button>
+          </div>
+        </section>
+        <!-- Url section -->
+        <section class="url-section">
+          <div class="url-container">
+            <form>
+              <div class="url-input-1">
+                <label for="url"></label>
+                <input
+                  type="url"
+                  id="url"
+                  name="url"
+                  placeholder="Paste URL here"
+                  required=""
+                />
+              </div>
+              <div class="url-input-2">
+                <div class="url-domain">
+                  <label for="domain"></label>
+                  <select name="domain" id="domain">
+                    <option value="Choose Domain" selected="" disabled="">
+                      Choose Domain
+                    </option>
+                    <option value="www.tweelo.com">www.tweelo.com</option>
+                    <option value="www.zackintosh.com">
+                      www.zackintosh.com
+                    </option>
+                    <option value="www.silentbermuda.com">
+                      www.silentbermuda.com
+                    </option>
+                    <option value="www.bermudatriangle.com">
+                      www.bermudatriangle.com
+                    </option>
+                  </select>
+                </div>
+                <div class="url-alias">
+                  <label for="alias"></label>
+                  <input
+                    type="text"
+                    name="alias"
+                    id="alias"
+                    placeholder="Type Alias Here"
+                  />
+                </div>
+              </div>
+
+              <button type="submit" class="submit-btn">
+                Trim URL
+                <img src="./assets/magic wand.png" alt="Magic wand" />
+              </button>
+              <p>
+                By clicking TrimURL, I agree to the
+                <strong>Terms of Service</strong>,
+                <strong>Privacy Policy</strong> and Use of Cookies.
+              </p>
+            </form>
+          </div>
+        </section>
+        <!-- FAQ section-->
         <section class="faq-section">
           <div class="faq-container">
             <div class="faq-container-title">
@@ -318,5 +476,113 @@
         </div>
       </section>
     </main>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-Container">
+        <div class="firstcontainer">
+          <div class="first-container">
+            <div class="footer-logo">
+              <img
+                src="./assets/footer-logo.png"
+                alt="A logo for the footer section"
+              />
+            </div>
+
+            <div class="footer-icons">
+              <div>
+                <span class="fa-brands fa-twitter" aria-hidden="true"></span>
+              </div>
+              <div>
+                <span class="fa-brands fa-instagram" aria-hidden="true"></span>
+              </div>
+              <div>
+                <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
+              </div>
+              <div>
+                <span
+                  class="fa-brands fa-square-facebook"
+                  aria-hidden="true"
+                ></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="secondContainer">
+            <div class="second-container">
+              <div class="offers">
+                <h3>Why Scissors?</h3>
+                <p>Scissor 101</p>
+                <p>Integrations &amp; API</p>
+                <p>Pricing</p>
+              </div>
+
+              <div class="offers">
+                <h3>Solutions</h3>
+                <p>Social Media</p>
+                <p>Digital Marketing</p>
+                <p>Customer Service</p>
+                <p>For Developers</p>
+              </div>
+
+              <div class="offers">
+                <h3>Products</h3>
+                <p>Link Management</p>
+                <p>QR Codes</p>
+                <p>Link-in-bio</p>
+              </div>
+
+              <div class="offers">
+                <h3>Resources</h3>
+                <p>Blog</p>
+                <p>Resource Library</p>
+                <p>Developers</p>
+                <p>App Connectors</p>
+                <p>Support</p>
+                <p>Browser Extension</p>
+                <p>Mobile App</p>
+              </div>
+
+              <div class="offers">
+                <h3>Features</h3>
+                <p>Branded Links</p>
+                <p>Mobile Links</p>
+                <p>Campaign</p>
+                <p>Management &amp; Analytics</p>
+                <p>QR Code generation</p>
+              </div>
+
+              <div class="offers">
+                <h3>Legal</h3>
+                <p>Privacy Policy</p>
+                <p>Cookie Policy</p>
+                <p>Terms of Service</p>
+                <p>Acceptable Use Policy</p>
+                <p>Code of Conduct</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="about">
+              <h3>Company</h3>
+              <p>About Scissor</p>
+              <p>Careers</p>
+              <p>Partners</p>
+              <p>Press</p>
+              <p>Contact</p>
+              <p>Reviews</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="second-container-term">
+          <div class="term">
+            <p>Term of Service</p>
+            <p>Security</p>
+            <p>© Scissor 2023</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

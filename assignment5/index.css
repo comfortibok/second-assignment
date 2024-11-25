@@ -404,11 +404,23 @@ footer span {
   }
   .menu-icon {
     visibility: visible;
-  }
-  a {
-    display: none;
-  }
-  .account {
+    cursor: pointer;
+}
+.nav-list {
+  display: none; 
+  flex-direction: column; 
+  gap: 15px;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: var(--background-light);
+  z-index: 1000;
+  padding: 10px 0; 
+}
+.nav-list.active {
+  display: flex; 
+}  .account {
     display: none;
   }
   section {
@@ -453,16 +465,9 @@ footer span {
   }
 }
 @media (max-width: 480px) {
-  header {
-    max-width: 100%;
-  }
-  .logo {
+ .logo {
     max-width: 150px;
   }
-  .menu-icon {
-    visibility: visible;
-  }
-  a,
   .account {
     display: none;
   }
