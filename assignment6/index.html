@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scissors</title>
+
     <!-- Google font - Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+
     <!-- Font awesome-->
     <link
       rel="stylesheet"
@@ -19,6 +21,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <!-- CSS -->
     <link rel="stylesheet" href="index.css" />
   </head>
@@ -30,7 +33,7 @@
         <div class="header-logo">
           <img src="./assets/header-logo.png" alt="Scissor Logo" />
         </div>
-        <div class="menu-icon">
+        <div class="menu-icon" onclick="toggleMenu()">
           <span class="fa-solid fa-bars" aria-hidden="true"></span>
         </div>
         <ul class="nav-container-list">
@@ -40,7 +43,7 @@
           <li>
             <a href="#">
               Features
-              <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+              <span class="fa-solid fa-chevron-down" aria-hidden="true"></span>
             </a>
           </li>
           <li>
@@ -303,167 +306,164 @@
             <button class="price-btn">Select Pricing</button>
           </div>
         </section>
-        <!-- Url section -->
-        <section class="url-section">
-          <div class="url-container">
-            <form>
-              <div class="url-input-1">
-                <label for="url"></label>
+      </section>
+      <!-- Url section -->
+      <section class="url-section">
+        <div class="url-container">
+          <form>
+            <div class="url-input-1">
+              <label for="url"></label>
+              <input
+                type="url"
+                id="url"
+                name="url"
+                placeholder="Paste URL here"
+                required=""
+              />
+            </div>
+            <div class="url-input-2">
+              <div class="url-domain">
+                <label for="domain"></label>
+                <select name="domain" id="domain">
+                  <option value="Choose Domain" selected="" disabled="">
+                    Choose Domain
+                  </option>
+                  <option value="www.tweelo.com">www.tweelo.com</option>
+                  <option value="www.zackintosh.com">www.zackintosh.com</option>
+                  <option value="www.silentbermuda.com">
+                    www.silentbermuda.com
+                  </option>
+                  <option value="www.bermudatriangle.com">
+                    www.bermudatriangle.com
+                  </option>
+                </select>
+              </div>
+              <div class="url-alias">
+                <label for="alias"></label>
                 <input
-                  type="url"
-                  id="url"
-                  name="url"
-                  placeholder="Paste URL here"
-                  required=""
+                  type="text"
+                  name="alias"
+                  id="alias"
+                  placeholder="Type Alias Here"
                 />
               </div>
-              <div class="url-input-2">
-                <div class="url-domain">
-                  <label for="domain"></label>
-                  <select name="domain" id="domain">
-                    <option value="Choose Domain" selected="" disabled="">
-                      Choose Domain
-                    </option>
-                    <option value="www.tweelo.com">www.tweelo.com</option>
-                    <option value="www.zackintosh.com">
-                      www.zackintosh.com
-                    </option>
-                    <option value="www.silentbermuda.com">
-                      www.silentbermuda.com
-                    </option>
-                    <option value="www.bermudatriangle.com">
-                      www.bermudatriangle.com
-                    </option>
-                  </select>
-                </div>
-                <div class="url-alias">
-                  <label for="alias"></label>
-                  <input
-                    type="text"
-                    name="alias"
-                    id="alias"
-                    placeholder="Type Alias Here"
-                  />
-                </div>
-              </div>
+            </div>
 
-              <button type="submit" class="submit-btn">
-                Trim URL
-                <img src="./assets/magic wand.png" alt="Magic wand" />
-              </button>
+            <button type="submit" class="submit-btn">
+              Trim URL
+              <img src="./assets/magic wand.png" alt="Magic wand" />
+            </button>
+            <p>
+              By clicking TrimURL, I agree to the
+              <strong>Terms of Service</strong>,
+              <strong>Privacy Policy</strong> and Use of Cookies.
+            </p>
+          </form>
+        </div>
+      </section>
+      <!-- FAQ section-->
+      <section class="faq-section">
+        <div class="faq-container">
+          <div class="faq-container-title">
+            <h2>FAQs</h2>
+          </div>
+          <div class="faq-details">
+            <details>
+              <summary>How does URL shortening work?</summary>
               <p>
-                By clicking TrimURL, I agree to the
-                <strong>Terms of Service</strong>,
-                <strong>Privacy Policy</strong> and Use of Cookies.
+                URL shortening works by taking a long URL and creating a
+                shorter, condensed version that redirects to the original URL.
+                When a user clicks on the shortened link, they are redirected to
+                the intended destination.
               </p>
-            </form>
+            </details>
+            <details>
+              <summary>
+                Is it necessary to create an account to use the URL shortening
+                service?
+              </summary>
+              <p>
+                While you can use basic URL shortening without an account,
+                creating an account gives you access to additional features such
+                as link history, analytics, and custom URLs.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Are the shortened links permanent? Will they expire?
+              </summary>
+              <p>
+                Our shortened links do not expire by default. They will remain
+                active as long as our service is operational. However, users
+                with accounts have the option to set expiration dates for their
+                links if desired.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Are there any limitations on the number of URLs I can shorten?
+              </summary>
+              <p>
+                Free users can shorten a limited number of URLs per day. Premium
+                users enjoy higher or unlimited URL shortening capabilities,
+                depending on their subscription plan.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Can I customize the shortened URLs to reflect my brand or
+                content?
+              </summary>
+              <p>
+                Yes, you can customize the shortened URLs to reflect your brand
+                or content. Our link shortening services allow you to create
+                branded short links, often using your domain name as a base.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Can I track the performance of my shortened URLs?
+              </summary>
+              <p>
+                Yes, our link shortening services offer robust analytics tools
+                to track the performance of your shortened URLs. You can gain
+                insights into click-through rates, geographic traffic, and other
+                key metrics to optimize your marketing campaigns.
+              </p>
+            </details>
+            <details>
+              <summary>
+                How secure is the URL shortening service? Are the shortened
+                links protected against spam or malicious activity?
+              </summary>
+              <p>
+                Our reputable link shortening services prioritize security and
+                implement measures to protect your links and user data. They
+                often employ advanced security protocols to prevent spam,
+                malware, and phishing attacks.
+              </p>
+            </details>
+            <details>
+              <summary>What is a QR code and what can it do?</summary>
+              <p>
+                A QR code (Quick Response code) is a type of two-dimensional
+                barcode that can be scanned by a smartphone camera. When
+                scanned, it typically directs the user to a website, downloads
+                an app, or displays specific information.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Is there an API available for integrating the URL shortening
+                service into my own applications or websites?
+              </summary>
+              <p>
+                Yes, our URL shortening services offer APIs that you can
+                integrate into your own applications or websites.
+              </p>
+            </details>
           </div>
-        </section>
-        <!-- FAQ section-->
-        <section class="faq-section">
-          <div class="faq-container">
-            <div class="faq-container-title">
-              <h2>FAQs</h2>
-            </div>
-            <div class="faq-details">
-              <details>
-                <summary>How does URL shortening work?</summary>
-                <p>
-                  URL shortening works by taking a long URL and creating a
-                  shorter, condensed version that redirects to the original URL.
-                  When a user clicks on the shortened link, they are redirected
-                  to the intended destination.
-                </p>
-              </details>
-              <details>
-                <summary>
-                  Is it necessary to create an account to use the URL shortening
-                  service?
-                </summary>
-                <p>
-                  While you can use basic URL shortening without an account,
-                  creating an account gives you access to additional features
-                  such as link history, analytics, and custom URLs.
-                </p>
-              </details>
-              <details>
-                <summary>
-                  Are the shortened links permanent? Will they expire?
-                </summary>
-                <p>
-                  Our shortened links do not expire by default. They will remain
-                  active as long as our service is operational. However, users
-                  with accounts have the option to set expiration dates for
-                  their links if desired.
-                </p>
-              </details>
-              <details>
-                <summary>
-                  Are there any limitations on the number of URLs I can shorten?
-                </summary>
-                <p>
-                  Free users can shorten a limited number of URLs per day.
-                  Premium users enjoy higher or unlimited URL shortening
-                  capabilities, depending on their subscription plan.
-                </p>
-              </details>
-              <details>
-                <summary>
-                  Can I customize the shortened URLs to reflect my brand or
-                  content?
-                </summary>
-                <p>
-                  Yes, you can customize the shortened URLs to reflect your
-                  brand or content. Our link shortening services allow you to
-                  create branded short links, often using your domain name as a
-                  base.
-                </p>
-              </details>
-              <details>
-                <summary>
-                  Can I track the performance of my shortened URLs?
-                </summary>
-                <p>
-                  Yes, our link shortening services offer robust analytics tools
-                  to track the performance of your shortened URLs. You can gain
-                  insights into click-through rates, geographic traffic, and
-                  other key metrics to optimize your marketing campaigns.
-                </p>
-              </details>
-              <details>
-                <summary>
-                  How secure is the URL shortening service? Are the shortened
-                  links protected against spam or malicious activity?
-                </summary>
-                <p>
-                  Our reputable link shortening services prioritize security and
-                  implement measures to protect your links and user data. They
-                  often employ advanced security protocols to prevent spam,
-                  malware, and phishing attacks.
-                </p>
-              </details>
-              <details>
-                <summary>What is a QR code and what can it do?</summary>
-                <p>
-                  A QR code (Quick Response code) is a type of two-dimensional
-                  barcode that can be scanned by a smartphone camera. When
-                  scanned, it typically directs the user to a website, downloads
-                  an app, or displays specific information.
-                </p>
-              </details>
-              <details>
-                <summary>
-                  Is there an API available for integrating the URL shortening
-                  service into my own applications or websites?
-                </summary>
-                <p>
-                  Yes, our URL shortening services offer APIs that you can
-                  integrate into your own applications or websites.
-                </p>
-              </details>
-            </div>
-          </div>
-        </section>
+        </div>
       </section>
       <!-- Optimize Section -->
       <section class="optimize-section">
@@ -584,5 +584,14 @@
         </div>
       </div>
     </footer>
+    <script>
+      function toggleMenu() {
+        const navContainerList = document.querySelector(".nav-container-list");
+        const loginContainer = document.querySelector(".login-container");
+
+        navContainerList.classList.toggle("active");
+        loginContainer.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>

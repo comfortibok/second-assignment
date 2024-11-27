@@ -34,7 +34,6 @@ p {
   font-size: 1.5rem;
   padding-block-start: 5px;
 }
-
 .container {
   display: flex;
   flex-direction: row;

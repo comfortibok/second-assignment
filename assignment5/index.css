@@ -158,17 +158,18 @@ h2 {
   width: 20%;
 }
 #credit-expiry,
-#credit-card-cvv,#credit-card  {
-border-radius: 0;
-margin: 0;
+#credit-card-cvv,
+#credit-card {
+  border-radius: 0;
+  margin: 0;
 }
-#credit-card{
+#credit-card {
   border-top-left-radius: 5px;
-   border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
-#credit-card-cvv{
+#credit-card-cvv {
   border-top-right-radius: 5px;
-   border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 input[type="text"],
 input[type="email"],
@@ -391,12 +392,13 @@ footer p {
 footer span {
   color: rgb(39, 125, 154);
 }
+
 @media (max-width: 1024px) {
   section {
     max-width: 800px;
     margin: 3rem auto;
   }
-  }
+}
 
 @media (max-width: 768px) {
   header {
@@ -405,22 +407,23 @@ footer span {
   .menu-icon {
     visibility: visible;
     cursor: pointer;
-}
-.nav-list {
-  display: none; 
-  flex-direction: column; 
-  gap: 15px;
-  position: absolute;
-  top: 60px;
-  left: 0;
-  width: 100%;
-  background-color: var(--background-light);
-  z-index: 1000;
-  padding: 10px 0; 
-}
-.nav-list.active {
-  display: flex; 
-}  .account {
+  }
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-light);
+    z-index: 1000;
+    padding: 10px 0;
+  }
+  .nav-list.active {
+    display: flex;
+  }
+  .account {
     display: none;
   }
   section {
@@ -465,7 +468,7 @@ footer span {
   }
 }
 @media (max-width: 480px) {
- .logo {
+  .logo {
     max-width: 150px;
   }
   .account {
