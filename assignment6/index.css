@@ -1,4 +1,3 @@
-/* General Reset */
 :root {
   --color-black: rgb(20, 20, 20);
   --color-blue: rgb(0, 101, 254);
@@ -22,6 +21,7 @@ body {
 /* Header */
 header {
   max-width: 1280px;
+  height: 45px;
   margin: 0 auto;
   padding: 10px 20px;
 }
@@ -50,7 +50,7 @@ img {
 .nav-container-list a {
   text-decoration: none;
   color: var(--color-black);
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 500;
   transition: color 0.3s;
 }
@@ -66,7 +66,7 @@ img {
 }
 .login-container button,
 .button-container button {
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 500;
 }
 .login-btn {
@@ -92,7 +92,7 @@ img {
   transition: all 150ms ease-in-out;
 }
 .trial-btn:hover {
-  color: var(--color-blue);
+  color: var(--color-wh);
   background-color: var(--color-white);
 }
 .menu-icon {
@@ -112,7 +112,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-block: 4rem 1rem;
+  margin-block: 3rem 1rem;
 }
 
 .title {
@@ -198,7 +198,7 @@ img {
   background-image: url("./assets/Vector\ 2.png");
   background-repeat: no-repeat;
   background-size: contain;
-  margin-block: 4rem 2rem;
+  margin-block: 2rem;
 }
 
 .link-container {
@@ -239,13 +239,12 @@ img {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-block-start: 60px;
+  margin-block-start: 25px;
 }
 .ellipse-container {
   width: 850px;
   height: 49px;
 }
-
 /* Possibility Section */
 .possibility-section {
   background-color: var(--background-color-possibility);
@@ -254,32 +253,29 @@ img {
   justify-content: center;
   align-items: center;
   padding: 60px 120px;
-  gap: 60px;
+  gap: 80px;
 }
-
 .possibility-title {
+  max-width: 1450px;
   display: flex;
   flex-direction: column;
 }
-
 .possibility-title h4 {
-  width: 337px;
+  max-width: 337px;
   font-size: 38px;
   line-height: 48px;
   font-weight: 600;
 }
-
 .possibility-title span {
   color: var(--color-span);
 }
-
 .possibility-numbers {
-  width: 709px;
+  max-width: 709px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 50px;
 }
-
 .possibility-number1 p,
 .possibility-number2 p,
 .possibility-number3 p,
@@ -288,7 +284,6 @@ img {
   line-height: 40px;
   font-weight: 600;
 }
-
 .possibility-number1 span,
 .possibility-number2 span,
 .possibility-number3 span,
@@ -297,13 +292,11 @@ img {
   line-height: 24px;
   font-weight: 400;
 }
-
 .possibility-number1,
 .possibility-number3,
 .possibility-number4 {
   max-width: 135px;
 }
-
 .possibility-number2 {
   max-width: 120px;
 }
@@ -314,7 +307,7 @@ img {
   display: flex;
   flex-direction: row;
   padding: 2rem;
-  margin: 2rem;
+  margin: 2rem 2rem 1rem;
   gap: 96px;
 }
 .service-container {
@@ -357,7 +350,7 @@ img {
 }
 .services {
   max-width: 708px;
-  height: 504px;
+  min-height: 504px;
   gap: 64px;
   display: flex;
   flex-direction: row;
@@ -406,8 +399,6 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
-  margin: 3rem;
 }
 .price-container {
   max-width: 595px;
@@ -439,8 +430,8 @@ img {
 }
 .price-content-container {
   max-width: 1088px;
-  height: 627px;
-  margin: 4rem auto 2rem;
+  min-height: 627px;
+  margin: 2rem auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -519,6 +510,7 @@ img {
   display: flex;
   flex-direction: row;
   gap: 12px;
+  margin-block-end: 4rem;
 }
 .custom-btn {
   max-width: 200px;
@@ -549,13 +541,13 @@ img {
 .url-container {
   max-width: 470px;
   margin: 0 auto;
-  padding: 40px;
+  padding: 20px;
   background-color: rgb(255, 255, 255);
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 100px;
+  gap: 20px;
 }
 #url {
   width: 100%;
@@ -610,14 +602,8 @@ form p {
 
 /* FAQ */
 .faq-section {
-  margin: 2rem;
-  position: relative;
-  background-image: url();
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  margin: 1rem;
 }
-
 .faq-container {
   max-width: 792px;
   margin: 0 auto;
@@ -625,14 +611,12 @@ form p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 3rem;
+  padding: 2rem;
 }
-
 .faq-container-title {
   max-width: 112.1px;
-  margin-block-end: 1.5rem;
+  margin-block-end: 1rem;
 }
-
 .faq-container-title h2 {
   font-size: 40px;
   line-height: 32px;
@@ -642,19 +626,17 @@ form p {
   border-inline-start: 5px solid;
   border-image-source: linear-gradient(
     180deg,
-    #112232 0%,
+    rgb(17, 34, 50) 0%,
     rgba(77, 107, 136, 0) 100%
   );
   border-image-slice: 1;
-  margin-block-end: 2rem;
 }
-
 details {
+  position: relative;
   max-width: 792px;
   border-bottom: 1px solid rgb(214, 214, 214);
   padding-block: 30px;
 }
-
 details p {
   width: 792px;
   font-size: 16px;
@@ -663,15 +645,13 @@ details p {
   text-align: left;
   padding-block: 15px 0;
 }
-
 details::after {
   content: "+";
   font-size: 32px;
   font-weight: 400;
   position: absolute;
-  right: 17rem;
+  right: 8px;
 }
-
 summary {
   max-width: 744px;
   font-size: 20px;
@@ -684,8 +664,8 @@ summary {
 /* Optimize Section  */
 .optimize-section {
   background-color: rgb(17, 34, 50);
+  margin-block-start: 5rem;
 }
-
 .optimize-container {
   max-width: 806px;
   margin: 0 auto;
@@ -695,7 +675,6 @@ summary {
   padding: 5rem 3rem;
   gap: 32px;
 }
-
 .optimize-container p {
   color: var(--color-white);
   font-size: 40px;
@@ -703,7 +682,6 @@ summary {
   line-height: 48px;
   text-align: center;
 }
-
 .start-btn button {
   color: var(--color-white);
   background-color: var(--color-span);
@@ -716,28 +694,23 @@ summary {
   padding: 12px 24px;
   border-radius: 20px;
 }
+
+/* footer */
 footer {
-  background-image: url();
 }
 .footer-Container {
   max-width: 1440px;
-  display: flex;
-  flex-direction: column;
+ display: grid;
+ grid-template-columns: repeat(1,1fr);
   max-width: 65rem;
   padding-block: 3rem;
-  margin: 4rem auto 2rem;
+  margin: 2rem auto;
 }
 .firstcontainer {
   display: flex;
   flex-direction: row;
   gap: 2rem;
   margin-block-end: 2.5rem;
-}
-.first-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
 }
 .footer-logo img {
   display: block;
@@ -756,6 +729,12 @@ footer {
 .fa-square-facebook {
   width: 20px;
 }
+.first-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
 .secondContainer {
   display: flex;
   flex-direction: column;
@@ -768,6 +747,7 @@ footer {
 }
 .offers,
 .about {
+  max-width: 180px;
   font-size: 16px;
   line-height: 24px;
 }
@@ -818,31 +798,40 @@ footer {
   }
 }
 @media (max-width: 768px) {
-   header {
-    max-width: 100%;
+  header {
+    max-width: 90%;
   }
- .nav-container-list {
-  display: none; 
-  flex-direction: column; 
-  gap: 15px;
-  position: absolute;
-  top: 60px;
+  .nav-container-list {
     width: 100%;
-  z-index: 1000;
-  padding: 10px 0; 
-}
-.nav-container-list.active {
-  display: flex; 
-}  
-  .menu-icon{
-  display: block;
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    padding: 20px;
   }
-   .title {
+  .nav-container-list.active {
+    display: flex;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+  .title {
     max-width: 948px;
     padding-inline: 10px;
   }
   .title h1 {
-    font-size: 40px;
+    font-size: 36px;
+    line-height: 56px;
+  }
+  .heading p {
+    font-size: 16px;
+    line-height: 24px;
+    padding-inline: 10px;
   }
   .linkContainer {
     padding-inline: 24px;
@@ -867,7 +856,7 @@ footer {
   }
   .service-container {
     display: grid;
-    grid-template-columns: ;
+   grid-template-columns: 1fr;
     gap: 20px;
   }
   .service-title {
@@ -875,6 +864,45 @@ footer {
     text-align: center;
     margin: 0 auto;
   }
+  .price-content-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .price-content-container-1,
+  .price-content-container-2,
+  .price-content-container-3 {
+    width: 400px;
+    padding: 10px 30px 20px;
+  }
+  .footer-Container {
+    padding: 20px;
+  }
 }
+
 @media (max-width: 480px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+  .link-container {
+    max-width: 400px;
+  }
+  .possibility-number1 p,
+  .possibility-number2 p,
+  .possibility-number3 p,
+  .possibility-number4 p {
+    font-size: 25px;
+  }
+  .possibility-number1 span,
+  .possibility-number2 span,
+  .possibility-number3 span,
+  .possibility-number4 span {
+    font-size: 14px;
+  }
+  .services-container{
+  grid-template-columns: 1fr;
+ }
+.optimize-container p{
+  font-size: 35px;
+}
 }
