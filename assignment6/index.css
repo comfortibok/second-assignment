@@ -696,14 +696,12 @@ summary {
 }
 
 /* footer */
-footer {
-}
+
 .footer-Container {
   max-width: 1440px;
  display: grid;
  grid-template-columns: repeat(1,1fr);
-  max-width: 65rem;
-  padding-block: 3rem;
+ padding-block: 3rem;
   margin: 2rem auto;
 }
 .firstcontainer {
